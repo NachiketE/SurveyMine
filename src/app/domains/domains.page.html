@@ -1,0 +1,13 @@
+
+<ion-content>
+  <div class="row ionhead">
+      <h2><b>Select Your Workspace</b></h2>
+      <h6>Tap on a company name to start collaborating with</h6>
+  </div>
+  <ion-list class="workspace">
+    <ion-item *ngFor="let company of companies" routerLink="/otp">
+        <ion-label><h5>{{ company.title }}</h5></ion-label>
+        <ion-icon name="arrow-dropright"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>

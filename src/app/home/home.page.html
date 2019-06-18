@@ -1,0 +1,60 @@
+<!--<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+	<div class="flb">
+	  <div class="Aligner-item Aligner-item--top"></div>
+	  <img src="assets/logo.svg">
+	  <div class="Aligner-item Aligner-item--bottom"></div>
+	</div>
+  </div>
+-->
+<!--<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+
+		<ion-item>
+		  <ion-label position="floating">Username</ion-label>
+		  <ion-input type="text" [(ngModel)]="username"></ion-input>
+		</ion-item>
+	  
+		<ion-item>
+		  <ion-label position="floating">Password</ion-label>
+		  <ion-input type="password" [(ngModel)]="password"></ion-input>
+		</ion-item>
+	  
+	  </ion-list>
+
+	  <ion-button fill="solid" expand="block" color="dark" (click)="login()">Login</ion-button>
+</ion-content> 
+-->
+
+
+<ion-content>
+		<div class="row ionhead">
+			<h3><b>Login</b></h3>
+			<h6> Enter your register Email ID or Mobile Number to receive an OTP</h6>	
+		</div>
+		<div class="ionform">
+		<ion-list>
+			<ion-item>
+			  <ion-icon slot="start" src="assets/icon/Mobile.svg"></ion-icon>
+			  <ion-label position="floating"><h6>Registered Mobile Number</h6></ion-label>
+			  <ion-input ></ion-input>
+			</ion-item>
+		  
+			<ion-item>
+			  <ion-icon slot="start" src="assets/icon/Mail.svg"></ion-icon>
+			  <ion-label position="floating"><h6>Registered eMail ID</h6></ion-label>
+			  <ion-input type="eMail"></ion-input>
+			</ion-item>
+		</ion-list>
+		</div>
+		<div class="row ionicbtn ">
+			<ion-button fill="solid" expand="block" class="ionbtn" color="success" routerLink="/domains">CONTINUE
+				<ion-icon slot="end" class="iicon" src="assets/icon/arrow.svg"></ion-icon>
+			</ion-button>
+		</div>
+</ion-content>
